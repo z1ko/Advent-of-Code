@@ -78,7 +78,7 @@ def extract_values(line, separator):
 values = []
 tables = []
 
-with open('2021/04/test') as f:
+with open('2021/04/values') as f:
 
     # Carica valori di gioco
     line = f.readline()
@@ -97,7 +97,8 @@ with open('2021/04/test') as f:
 total_wins = 0
 for value in values:
 
-    for table in tables:
+    # iteriamo su una copia della lista per poterla modificare 
+    for table in list(tables):
         if table.check(value) == True:
 
             print(f"{total_wins}) Winner with value {value}: {table.result(value)}\n")
