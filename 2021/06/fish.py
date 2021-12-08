@@ -1,4 +1,4 @@
-# Complessita O(Kg) dove g è il numero di giorni
+# Complessita O(g) dove g è il numero di giorni
 
 # Propaga pesci nella lista
 def cascade(fishes):
